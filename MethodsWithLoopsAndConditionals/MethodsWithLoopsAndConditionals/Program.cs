@@ -6,34 +6,34 @@ namespace MethodsWithLoopsAndConditionals
     {
         static void Main(string[] args)
         {
-            //LukeWarm 1
+            //lukewarm 1
             PrintThousand();
-            //LukeWarm 2
+            //lukewarm 2
             PrintThrees();
-            //LukeWarm 3
-            Console.WriteLine("Enter a number:");
+            //lukewarm 3
+            Console.WriteLine("enter a number:");
             var userIntA = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter another number:");
+            Console.WriteLine("enter another number:");
             var userIntB = int.Parse(Console.ReadLine());
             EqualOrNot(userIntA, userIntB);
-            //LukeWarm 4
-            Console.WriteLine("Enter a number:");
+            //lukewarm 4
+            Console.WriteLine("enter a number:");
             var userInt = int.Parse(Console.ReadLine());
             EvenOrOdd(userInt);
-            //LukeWarm 5
-            Console.WriteLine("Enter a number:");
+            //lukewarm 5
+            Console.WriteLine("enter a number:");
             userInt = int.Parse(Console.ReadLine());
             PosOrNeg(userInt);
-            //LukeWarm 6
-            Console.WriteLine("Enter your age:");
+            //lukewarm 6
+            Console.WriteLine("enter your age:");
             userInt = int.Parse(Console.ReadLine());
             CanVote(userInt);
 
-            //HeatingUp 1
-            Console.WriteLine("Enter a number:");
+            //heatingup 1
+            Console.WriteLine("enter a number:");
             userInt = int.Parse(Console.ReadLine());
             InRange(userInt);
-            //HeatingUp 2
+            //heatingup 2
             Console.WriteLine("Enter a number to multiply:");
             userInt = int.Parse(Console.ReadLine());
             MultTable(userInt);

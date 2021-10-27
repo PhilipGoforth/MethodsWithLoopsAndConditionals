@@ -11,32 +11,18 @@ namespace MethodsWithLoopsAndConditionals
             //lukewarm 2
             PrintThrees();
             //lukewarm 3
-            Console.WriteLine("enter a number:");
-            var userIntA = int.Parse(Console.ReadLine());
-            Console.WriteLine("enter another number:");
-            var userIntB = int.Parse(Console.ReadLine());
-            EqualOrNot(userIntA, userIntB);
+            EqualOrNot();
             //lukewarm 4
-            Console.WriteLine("enter a number:");
-            var userInt = int.Parse(Console.ReadLine());
-            EvenOrOdd(userInt);
+            EvenOrOdd();
             //lukewarm 5
-            Console.WriteLine("enter a number:");
-            userInt = int.Parse(Console.ReadLine());
-            PosOrNeg(userInt);
+            PosOrNeg();
             //lukewarm 6
-            Console.WriteLine("enter your age:");
-            userInt = int.Parse(Console.ReadLine());
-            CanVote(userInt);
+            CanVote();
 
             //heatingup 1
-            Console.WriteLine("enter a number:");
-            userInt = int.Parse(Console.ReadLine());
-            InRange(userInt);
+            InRange();
             //heatingup 2
-            Console.WriteLine("Enter a number to multiply:");
-            userInt = int.Parse(Console.ReadLine());
-            MultTable(userInt);
+            MultTable();
         }
         //LukeWarm 1-6
         public static void PrintThousand()
@@ -54,38 +40,45 @@ namespace MethodsWithLoopsAndConditionals
                 {
                     Console.WriteLine(i);
                 }
-                
             }
-            
         }
-        public static void EqualOrNot(int userIntA, int userIntB)
+        public static void EqualOrNot()
         {
-            var answer = (userIntA == userIntB) ? "These are equal!" : "These are not equal!";
-            Console.WriteLine(answer);
+            Console.WriteLine("enter a number:");
+            var userIntA = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter another number:");
+            var userIntB = int.Parse(Console.ReadLine());
+            Console.WriteLine((userIntA == userIntB) ? "These are equal!" : "These are not equal!");
         }
-        public static void EvenOrOdd(int userInt)
+        public static void EvenOrOdd()
         {
-            var answer = (userInt % 2 == 0) ?  "This number is even!" :  "This number is Odd!";
-            Console.WriteLine(answer);
+            Console.WriteLine("enter a number:");
+            var userInt = int.Parse(Console.ReadLine());
+            Console.WriteLine((userInt % 2 == 0) ? "This number is even!" : "This number is Odd!");
         }
-        public static void PosOrNeg(int userInt)
+        public static void PosOrNeg()
         {
-            var answer = (userInt >= 0) ? "This number is Positive!" : "This number is Negative!";
-            Console.WriteLine(answer);
+            Console.WriteLine("enter a number:");
+            var userInt = int.Parse(Console.ReadLine());
+            Console.WriteLine((userInt >= 0) ? "This number is Positive!" : "This number is Negative!");
         }
-        public static void CanVote(int userInt)
+        public static void CanVote()
         {
-            var answer = (userInt >= 18) ? "You are old enough to vote!" : "You can't vote yet!";
-            Console.WriteLine(answer);
+            Console.WriteLine("enter your age:");
+            var userInt = int.Parse(Console.ReadLine());
+            Console.WriteLine((userInt >= 18) ? "You are old enough to vote!" : "You can't vote yet!");
         }
         //HeatingUp 
-        public static void InRange(int userInt)
-        { 
-            var answer = (userInt <= 10 && userInt >= -10) ? "This number is in range!" : "This number is NOT in range!";
-            Console.WriteLine(answer);
-        }
-        public static void MultTable(int userInt)
+        public static void InRange()
         {
+            Console.WriteLine("enter a number:");
+            var userInt = int.Parse(Console.ReadLine());
+            Console.WriteLine((userInt <= 10 && userInt >= -10) ? "This number is in range!" : "This number is NOT in range!");
+        }
+        public static void MultTable()
+        {
+            Console.WriteLine("Enter a number to multiply:");
+            var userInt = int.Parse(Console.ReadLine());
             for (int i = userInt; i <= 12; i++)
             {
                 Console.Write(i + "\t");

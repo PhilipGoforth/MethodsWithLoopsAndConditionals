@@ -34,12 +34,9 @@ namespace MethodsWithLoopsAndConditionals
         }
         public static void PrintThrees()
         {
-            for(int i = 3; i <= 999; i++)
+            for(int i = 3; i <= 999; i+=3)
             {
-                if(i%3 == 0)
-                {
-                    Console.WriteLine(i);
-                }
+                Console.WriteLine(i);
             }
         }
         public static void EqualOrNot()
